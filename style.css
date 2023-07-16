@@ -22,6 +22,8 @@ h2 {
 	line-height: 3.8rem;
 	font-weight: bold;
 	margin: 0;
+    margin-bottom: 2rem;
+    text-align: center;
 }
 
 h3 {
@@ -44,6 +46,7 @@ h5 {
 	font-weight: bold;
 	margin: 0;
 	text-decoration: none;
+    text-align: start;
 }
 
 h6 {
@@ -86,6 +89,7 @@ h6 {
 	text-align: center;
 }
 .abouts{
+    margin-top: -5rem;
 	padding: 50px 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -104,9 +108,130 @@ h6 {
 	justify-content: center;
 	flex-direction: column;
 	align-self: center;
-	/* padding: 0 2%; */
+	padding: 0 2%;
 }
 
+
+.gastronomia{
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+#gastronomia_text{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-self: center;
+	padding: 0 5%;
+}
+#gastronomia_img{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.servicios{
+	display: flex;
+	justify-content: center;
+	margin: 4rem 0;
+}
+
+.servicios_uno{
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 4rem;
+}
+.servicios_dos{
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	/* flex-direction: column; */
+	justify-content: center;
+}
+.servicios_dos img{
+	width: 35rem;
+}
+.servicios_tres{
+	width: 33%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 0 4rem;
+}
+
+.vive_convencion{
+	padding: 2rem 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.vive_convencion--texto{
+	margin-bottom: 1rem;
+}
+.vive_convencion--texto h2{
+	text-align: center;
+}
+.vive_convencion--texto p{
+	text-align: center;
+}
+
+.hospedados{
+	padding-top: 1rem;
+	flex-wrap: wrap;
+}
+.hospedados h2{
+	text-align: center;
+}
+.fila1{
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0;
+}
+.sencilla__lux{
+	width: 33%;
+	padding: 0 3rem;
+}
+.doble__lux{
+	width: 33%;
+	padding: 0 3rem;
+}
+.extra{
+	padding: 0 3rem;
+	width: 33%;
+}
+.fila2{
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0;
+}
+.sencilla__premium{
+	width: 33%;
+	padding: 0 3rem;
+}
+.doble__premium{
+	width: 33%;
+	padding: 0 3rem;
+}
+.menor{
+	padding: 0 3rem;
+	width: 33%;
+}
+.no__hospedados{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 3rem;
+}
 
 
 @media(max-width: 720px){
@@ -133,6 +258,87 @@ h6 {
 		order: 1;		
 		text-align: justify;
 		width: 100%;
+	}
+    
+	#gastronomia{
+		width: 100%;
+	}
+	#gastronomia_text{
+		text-align: justify;
+		width: 100%;
+	}
+
+	#gastronomia_img img{
+		margin-top: 2rem;
+		width:30rem;
+	}
+
+	.servicios{
+		width: 100%;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.servicios_uno{
+		width: 100%;
+		/* order: 1; */
+	}
+	.servicios_dos{
+		width: 100%;
+		margin: 5rem 0;
+		/* order: 2; */
+	}
+	.servicios_dos img{
+		width: 30rem;
+	}
+
+	.servicios_tres{
+		width: 100%;
+		/* order: 3; */
+	}
+
+	.fila1{
+	flex-direction: column;
+	padding-bottom: 0;
+	
+	}
+	.sencilla__lux{
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	.doble__lux{
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	.extra{
+		/* padding: 0 3rem; */
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	
+	.fila2{
+		flex-direction: column;
+		margin: 0;
+		padding-top: 0;
+	}
+	.sencilla__premium{
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	.doble__premium{
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	.menor{
+		width: 100%;
+		margin-bottom: 5rem;
+	}
+	.no__hospedados{
+		padding: 4rem;
+	}
+
+	.carousel img{
+		width: calc(100% / 2);
 	}
 }
 @media(max-width: 500px){
