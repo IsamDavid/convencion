@@ -1,0 +1,151 @@
+*{
+	font-size: 62.5%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify;
+}
+p, b{
+    font-size: 1.6rem;
+}
+h1 {
+	font-size: 4.8rem;
+	line-height: 50px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+h2 {
+    color: #bd9e6f;
+	font-size: 4.0rem;
+	line-height: 3.8rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+h3 {
+	font-size: 3.0rem;
+	line-height: 3.2rem;
+	font-weight: bold;
+	margin: 0;
+}
+
+
+h4 {
+	font-size: 2.4rem;
+	line-height: 2.6rem;
+	font-weight: bold;
+	}
+
+h5 {
+	font-size: 2.0rem;
+	line-height: 2.2rem;
+	font-weight: bold;
+	margin: 0;
+	text-decoration: none;
+}
+
+h6 {
+	font-size: 1.7rem;
+	line-height: 2rem;
+	font-weight: bold;
+	margin: 0;
+	margin: .2rem 0;
+	text-decoration: none;
+}
+
+.menu{
+	width: 100%;
+	height: 8vh;
+	background-color: #000;
+	position: fixed;
+	top: 0;
+	z-index: 999999;
+}
+.menu_lista{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.menu_lista a{
+	margin: 0 2.5rem;
+	align-self: center;
+	font-size: 2rem;
+	color: white;
+}
+.menu_lista a:hover{
+	color: #e1cdb2;
+}
+.banner{
+	margin-top: 8vh;
+	height: 93vh;
+	background:url(img/banner.jpg) 50% no-repeat;
+	background-size: cover;
+	text-align: center;
+}
+.abouts{
+	padding: 50px 0;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-items: center;
+}
+
+#img_sobre{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+}
+#sobre_hotel{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-self: center;
+	/* padding: 0 2%; */
+}
+
+
+
+@media(max-width: 720px){
+    .menu_lista a{
+        margin: 0 1rem;
+        font-size: 1.4rem;	
+    }
+    .banner{
+		background:url(img/banner-cel.png) 50% no-repeat;
+		width: 100%;
+		/* height: 93vh; */
+		background-size: cover;
+	}
+    #img_sobre{
+		width: 100%;
+		text-align: center;
+		margin-top: 2rem;
+		order: 2;
+	}
+	#img_sobre img{
+		width:30rem;		
+	}
+	#sobre_hotel{
+		order: 1;		
+		text-align: justify;
+		width: 100%;
+	}
+}
+@media(max-width: 500px){
+    .menu_lista a{
+        margin: 0 1rem;
+        font-size: 1.2rem;	
+    }
+    .banner{
+		background:url(img/bannercel2.png) 50% no-repeat;
+		width: 100%;
+		/* height: 93vh; */
+		background-size: cover;
+	}
+    
+}
+
